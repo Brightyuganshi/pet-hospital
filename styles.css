@@ -1,0 +1,676 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+
+}
+
+/* .bodyser{
+    background-color: lightgrey;
+} */
+
+
+/* Hero Section */
+.navbar{
+     background-color:#80BCBD;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 9999999;
+    
+}
+
+
+.i {
+    color: white;
+}
+.nav-a {
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+.nav-a:hover{
+    color:#457b9d;
+    padding: 3px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    /* background-size: cover; */
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+}
+
+
+.hero-section .overlay {
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.container{
+    position: relative;
+}
+.btn{
+    box-shadow: 3px 3px 10px black;
+
+}
+.container a{
+    text-decoration: none;
+    box-shadow: 3px 3px 10px gray;
+}
+.container a:hover{
+    background-color: #ffc107;
+    color: black;
+}
+
+.paw-icon{
+    margin: 20px 0px 40px 0px;
+}
+
+.container img {
+
+    height: 200px;
+    width:200px;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+
+}
+@keyframes logo{
+    from{
+        transform:scale(-0%);
+    }
+    to{
+        transform: scale(100%);
+    }
+}
+
+.hero-section h1 {
+    font-size: 40px;
+    z-index: 1;
+    margin-bottom: 20px; color:black;
+}
+.hero-section h1 .name {
+    color: palevioletred;
+    font-size: 3rem;
+
+}
+
+.hero-section a {
+    z-index: 1;
+}
+/* Care Section */
+.care-section {
+    min-height: 100vh;
+    padding: 50px 0;
+      background-image: linear-gradient(to bottom,#ed94c8 10%,#f3bedd 30%,#ead0df 60%);
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color:white;
+}
+
+
+.lead {
+    font-size: 2rem;
+    margin-top: 10px;
+    color:black;
+}
+.care-section h1{
+    color:darkblue ;
+    text-shadow: 3px 3px 10px white;
+
+    
+}
+
+/* Image Styling */
+
+
+
+
+
+
+.img-fluid {
+    max-width: 70%;
+    height: 70%;
+    box-shadow: 4px 4px 15px  #457b9d;
+        
+   }
+  
+   .img-fluid:hover{
+    max-width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 15px darkcyan;
+    
+   }
+   
+    
+  
+.row img{
+    width:95%;
+    height: 280px;
+    margin: 5px; overflow: hidden;
+   
+}
+
+.img-fluid2{
+    width: 100%;
+    height: 400px;
+}
+.imgl{
+    width:200%
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+
+/* Services Section */
+.services-section {
+    /* background-color: #fff; */
+    padding: 50px 0;
+    border-top: 3px solid grey;
+}
+
+.service-card {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-image: url("https://wallpaperaccess.com/full/4113093.jpg");
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    transform: translateY(100%);
+}
+
+.service-card:hover .card-img {
+    transform: scale(1.1);
+}
+
+.service-card:hover .card-overlay {
+    transform: translateY(0);
+}
+
+
+.card-overlay h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 40px;
+    height: 4px;
+    background-color: #ffc107;
+    margin: 10px auto;
+}
+
+.view-services-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.view-services-btn:hover {
+    background-color: red;
+    color: white;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    
+}
+
+/* oursurvices */
+
+
+.oursurvices{
+    
+    font-size: 50px;
+    margin: 40px;
+    padding-top: 20px;
+    text-align: center;
+    color: darkblue;
+    animation-name: survice;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes survice{
+    from{
+    
+        transform:skewX(2deg);
+        
+
+    }
+    to{
+        transform:skewY(1deg);
+        font-size: 50px;
+    }
+}
+.list-group{
+    margin: 20px;
+    /* background-color: darkblue; */
+    color: white;
+}
+.list-group li{
+    background-color: darkblue;
+    /* text-align: center; */
+    font-size: 30px;
+    border: 1px solid white;
+}
+/* contact */
+
+.contact{
+    height: 100vh;
+    /* padding:10px; */
+}
+
+.contacth2{
+    font-size: 50px;
+    text-align: center;
+    color: darkblue;
+   
+}
+.btn{
+    width: 180px;
+    padding: 10px;
+    background-color:red;
+    color: white;
+    margin: auto;border: none;
+}
+form label{
+    font-size: 20px;
+    color: darkblue;
+}
+
+.map-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    box-shadow: 3px 3px 10px gray;
+    padding: 20px;border-radius: 10px;
+    animation-name: map;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.loca{
+    width: 50%;
+    font-size: 30px;
+    /* color: lightcoral; */
+}
+.locicon{
+    font-size: 70px;
+    color: red;
+}
+
+/* @keyframes map{
+    0%{
+        box-shadow:5px 5px 18px deeppink;
+    }
+   25%{
+    box-shadow:5px 5px 18px darkblue ;
+   }
+   50%{
+    box-shadow:5px 5px 18px red;
+   }
+   75%{
+    box-shadow:5px 5px 18px darkviolet
+   }
+   100%{
+    box-shadow:5px 5px 18px orangered
+   }
+} */
+
+.titleloc{
+    color: darkblue;
+    padding-top:  30px;
+}
+@media only screen and (min-width:0px) and (max-width:790px){
+    .map-container{
+        flex-direction: column;
+    }
+    .loca{
+        width: 100%;
+        
+    }
+
+}
+.Nema{
+    font-size: 90px;
+    color: #457b9d;
+
+    animation-name: deep;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+/* @keyframes deep{
+    0%{
+        color:deeppink;
+    }
+   25%{
+    color:darkblue ;
+   }
+   50%{
+    color:red;
+   }
+   75%{
+    color:darkviolet
+   }
+   100%{
+    color:orangered
+   }
+} */
+
+                         /* about us */
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #a8dadc;
+    color:#333;
+}
+
+.header h1 {
+    margin-top: 20px;
+    font-size: 3rem;
+    color: darkblue;
+
+}
+
+.header p {
+    font-size: 1.4rem;
+}
+
+/* Mission Section */
+.mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 300px;
+    padding: 40px 20px;
+    text-align: center;
+
+}
+.mission h2{
+    font-size: 40px;
+    margin: 20px;
+    color:lightcoral
+}
+.mission p{
+    font-size: 30px;
+    color:#555;
+}
+
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Team Section */
+.team {
+    background-color: #457b9d;
+
+    padding: 40px 20px;
+    text-align: center;
+}
+.team  h2{
+
+    color: white;
+    margin-bottom:  20px;
+    font-size: 40px;
+}
+
+.team-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 250px;
+    background-color:white;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Services Section */
+.services {
+    background-color: #f1faee;
+    padding: 40px 20px;
+    text-align: center;
+}
+.services h2{
+    color: #457b9d;
+    /* font-size: 50px; */
+}
+
+.services ul {
+    color: #d62828;
+    display: inline-block;
+    text-align: left;
+}
+
+
+
+/* Contact CTA */
+.contact-cta {
+    background-color: #457b9d;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact-cta .btn {
+    display: inline-block;
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+  
+.contact-cta .btn:hover {
+    background-color: #d62828;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%;
+    }
+    .lead{
+        font-size: 23px;
+    }
+    .loca i{
+        font-size: 30px;
+    }
+    .loca p{
+        font-size: 24px;
+    }
+}
+
+.nemo{
+    font-size: 30px;
+    margin: 10px;
+    color:darkblue;
+}
+@media (max-width: 358px){
+    .nemo{
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .titleloc{
+        font-size: 28px;
+ 
+    }
+
+}
+.nemos{
+    font-size: 60px;
+    margin: 10px;
+    color:darkblue;
+}
+
+.send{
+    border-radius: 50px 5px 50px 10px;
+
+}
+.send:hover{
+    background-color: #ffc107;
+    color: black;
+}
+
+/* Scrollable Image Section */
+.scroll-container {
+    background-image: linear-gradient(to left,rgb(157, 235, 247) 30%,rgb(171, 240, 152) 50%,rgb(240, 193, 123)70%);
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-track {
+    display: flex;
+    width: 200%; /* Ensures smooth scrolling */
+    animation: scroll-left 15s linear infinite;
+  }
+  
+  .image-track img {
+    
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin:25px 10px 25px 0px;
+    border-radius: 50%;
+    box-shadow:3px 3px 10px snow;
+  }
+  
+  /* Infinite Horizontal Scroll Animation */
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+
+  /* Why Choose Us Section */
+.why-choose-us {
+    
+    background-image: url("https://img.freepik.com/premium-vector/veterinary-clinic-healthcare-service-medical-center-domestic-animals-flat-cartoon-colorful-vector-illustration_180264-222.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 50px 20px;
+   
+  }
+  
+  .why-choose-us h2 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: darkmagenta;
+  }
+  
+  .choose-us-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .choose-us-card {
+    width: 300px;
+    text-align: center;
+    background-color: rgba(254, 251, 251, 0.7);
+   
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .choose-us-card:hover {
+    transform: scale(1.05);
+    background-color: white;
+    box-shadow: 4px 4px 15px darkmagenta;
+    h3{
+        color: #d62828;
+        font-size: 25px;
+    }
+  }  
+  .card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #7bbd69;
+  }
+  
+  .choose-us-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .choose-us-card p {
+    color: darkblue;
+    font-size: 16px;
+  }
