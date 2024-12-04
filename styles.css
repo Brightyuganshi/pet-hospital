@@ -269,12 +269,12 @@ body {
     margin: 40px;
     padding-top: 20px;
     text-align: center;
-    color: darkblue;
+    color: #457b9d;
     animation-name: survice;
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
-@keyframes survice{
+/* @keyframes survice{
     from{
     
         transform:skewX(2deg);
@@ -285,7 +285,7 @@ body {
         transform:skewY(1deg);
         font-size: 50px;
     }
-}
+} */
 .list-group{
     margin: 20px;
     /* background-color: darkblue; */
